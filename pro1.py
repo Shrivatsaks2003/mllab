@@ -11,7 +11,7 @@ df.hist(figsize=(12, 10), bins=30, edgecolor='black')
 plt.show()
 
 # Boxplots
-df.plot.box(figsize=(12, 8), subplots=True, layout=(3, 4), sharex=False, sharey=False)
+df.plot.box(figsize=(12, 8), subplots=True, layout=(3, 4))
 plt.tight_layout()
 plt.show()
 
