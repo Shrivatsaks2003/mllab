@@ -4,7 +4,7 @@ from sklearn.cluster import KMeans
 from sklearn.metrics import confusion_matrix, classification_report
 from sklearn.decomposition import PCA
 import pandas as pd
-import matplotlib.pyplot import pyforest
+import matplotlib.pyplot as plt
 
 X, y = load_breast_cancer(return_X_y=True)
 X_scaled = StandardScaler().fit_transform(X)
