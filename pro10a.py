@@ -1,3 +1,4 @@
+
 # Develop a program to implement k-means clustering using Wisconsin Breast Cancer data set and visualize
 # the clustering result. 
 #Alternate 10th program
@@ -20,6 +21,12 @@ cluster_labels = kmeans.labels_
 pca = PCA(n_components=2)
 x_pca = pca.fit_transform(x)
 
+plt.figure(figsize=(10,8))
+plt.scatter(x_pca[:, 0], x_pca[:, 1], c=cluster_labels, cmap='viridis', alpha=0.6)
+plt.title('K-Means Clustering on Breast Cancer Data')
+plt.xlabel("Principal Component 1")
+plt.ylabel("Principal Component 2")
+plt.show()
 plt.figure(figsize=(10,8))
 plt.scatter(x_pca[:, 0], x_pca[:, 1], c=cluster_labels, cmap='viridis', alpha=0.6)
 plt.title('K-Means Clustering on Breast Cancer Data')
