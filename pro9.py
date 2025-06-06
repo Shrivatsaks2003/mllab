@@ -1,4 +1,8 @@
-import pyforest
+from sklearn.datasets import fetch_olivetti_faces
+from sklearn.model_selection import train_test_split, cross_val_score
+from sklearn.naive_bayes import GaussianNB
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+import matplotlib.pyplot as plt
 
 # Load data
 X, y = fetch_olivetti_faces(shuffle=True, random_state=42, return_X_y=True)
